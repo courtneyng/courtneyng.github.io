@@ -1,0 +1,82 @@
+body{
+  background-color: #000;
+  transition: background-color .5s;
+  
+  
+}* { color:#fff; text-decoration: none;}
+
+
+#court{
+  font-size: 50px;
+}
+#subhead{
+font-size: 20px;
+}
+
+h3 {
+  color: #fff;
+}
+
+
+/* floating button */
+
+.me{
+  text-align:center;
+    background:url("cng.gif")no-repeat center / contain;
+    width:60px;
+    height:60px;
+    bottom:16px;
+    right:16px;
+    position:fixed;
+    border-radius:50%;
+    z-index:999;
+    animation:me 2s linear infinite alternate
+    }
+
+@keyframes me{
+    from{transform:translateY(-4px)}
+    to{transform:translateY(4px)}
+    }
+
+.me:hover span#center 
+    {right:110px;opacity:1;visibility: visible;}
+
+.me:hover span#right
+    {right:60px;opacity:1;visibility: visible;}
+
+.me:hover span#left 
+  {right:160px;opacity:1;visibility: visible;}
+
+#rightWidth{
+  width:40px;
+}
+#leftWidth{
+  width:40px;
+}
+#centerWidth{
+  width:40px;
+}
+.me span{
+    width:60px;
+    top:10px;
+    right:0;
+    display:block;
+    position:absolute;
+    color:#008080;
+    font-size:16px;
+    z-index:-1;
+    opacity:0;
+    visibility:hidden;
+    transition:all .5s ease
+    }
+.me img{
+  width:25%;
+  height:25%;
+}
+
+img#court{
+  height: 50%;
+  width: 50%;
+}
+
+/* end floating button */
