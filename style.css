@@ -1,3 +1,7 @@
+html{
+	font-family: Hack,monospace;
+}
+
 body{
 	background-color: #000;
 	transition: background-color .5s;
@@ -5,80 +9,111 @@ body{
 	
 }* { color:#fff; text-decoration: none;}
   
-  
-  #my-name{
+/* Main name header */
+.name-card{
+	float: right;
+}
+
+#my-name{
 	font-size: 100px;
 	float: right;
 	margin-top: 50px;
 	margin-right: 50px;
-  }
-  #subhead{
-  font-size: 20px;
-  }
-  
-  h3 {
-	color: #fff;
-  }
-  
-  
-  /* floating button */
-.float-social{
-	  text-align:center;
-	  background:url("img_assets/cng_noBG.png")no-repeat center / contain;
-	  width:60px;
-	  height:60px;
-	  bottom:16px;
-	  right:16px;
-	  position:fixed;
-	  border-radius:50%;
-	  z-index:999;
-	  animation:me 2s linear infinite alternate
+}
+
+/* Main name header */
+
+/* Image stack, perhaps change img to be more specific */
+
+img{
+	width: 80%;
+	height: auto;
+	border-radius: 1vw;
+}
+
+.image-stack{
+	padding: 3vw;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	position: relative;
+}
+
+.stack-top{
+	grid-column: 1 / span 8;
+	grid-row: 1;
+	padding-top: 20%;
+	z-index: 1;
+}
+
+.stack-bot{
+	grid-column: 4 / -1;
+	grid-row: 1;
+}
+/* End of main image stack*/
+
+
+#subhead{
+	font-size: 20px;
 }
   
-  @keyframes me{
-	  from{transform:translateY(-4px)}
-	  to{transform:translateY(4px)}
-	  }
+/* floating button */
+.float-social{
+	text-align:center;
+	background:url("img_assets/cng_noBG.png")no-repeat center / contain;
+	width:60px;
+	height:60px;
+	bottom:16px;
+	right:16px;
+	position:fixed;
+	border-radius:50%;
+	z-index:999;
+	animation:me 2s linear infinite alternate
+}
   
-  .float-social:hover span#center 
-	  {right:110px;opacity:1;visibility: visible;}
+@keyframes me{
+	from{transform:translateY(-4px)}
+	to{transform:translateY(4px)}
+}
   
-  .float-social:hover span#right
-	  {right:60px;opacity:1;visibility: visible;}
-  
-  .float-social:hover span#left 
+.float-social:hover span#center 
+	{right:110px;opacity:1;visibility: visible;}
+
+.float-social:hover span#right
+	{right:60px;opacity:1;visibility: visible;}
+
+.float-social:hover span#left 
 	{right:160px;opacity:1;visibility: visible;}
   
-  #rightWidth{
+#rightWidth{
 	width:40px;
-  }
-  #leftWidth{
+}
+#leftWidth{
 	width:40px;
-  }
-  #centerWidth{
+}
+#centerWidth{
 	width:40px;
-  }
-  .float-social span{
-	  width:60px;
-	  top:10px;
-	  right:0;
-	  display:block;
-	  position:absolute;
-	  color:#008080;
-	  font-size:16px;
-	  z-index:-1;
-	  opacity:0;
-	  visibility:hidden;
-	  transition:all .5s ease
-	  }
-  .float-social img{
+}
+.float-social span{
+	width:60px;
+	top:10px;
+	right:0;
+	display:block;
+	position:absolute;
+	color:#008080;
+	font-size:16px;
+	z-index:-1;
+	opacity:0;
+	visibility:hidden;
+	transition:all .5s ease
+}
+.float-social img{
 	width:25%;
 	height:25%;
-  }
-  
-  img#court{
+}
+
+img#court{
 	height: 50%;
 	width: 50%;
-  }
+}
   
   /* end floating button */
