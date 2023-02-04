@@ -8,6 +8,16 @@ body{
 	
 	
 }* { color:#fff; text-decoration: none;}
+
+.nav{
+	margin-top: 3vh;
+	margin-right: 2vw;
+	float: right;
+}
+
+.nav a{
+	padding: 0% .5vw;
+}
   
 /* Main name header */
 .name-card{
