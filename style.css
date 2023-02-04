@@ -41,7 +41,7 @@ img{
 .stack-top{
 	grid-column: 1 / span 8;
 	grid-row: 1;
-	padding-top: 20%;
+	padding-top: 30%;
 	z-index: 1;
 }
 
