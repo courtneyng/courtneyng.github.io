@@ -66,11 +66,11 @@ img{
 /* End of main image stack*/
 
 
-.about-me{
+.content{
 	text-align: center;
 }
 
-.about-me p{
+p{
 	margin-left: 10vw;
 	margin-right: 10vw;
 }
