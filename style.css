@@ -3,7 +3,7 @@ html{
 }
 
 body{
-	background-color: #000;
+	background-color: #111010;
 	transition: background-color .5s;
 	margin-right: 3vw;
 	margin-left: 3vw;
@@ -28,11 +28,21 @@ body{
 	float: right;
 }
 
+#hey{
+	margin-top: 10%;
+	color: #ab0000;
+}
+
 #my-name{
 	font-size: 100px;
 	float: right;
-	margin-top: 50px;
+	margin-top: 0;
 	margin-bottom: 2vh;
+	color: #fff;
+}
+
+#typing-subhead{
+	padding: 0;
 }
 
 /* Main name header */
@@ -73,7 +83,9 @@ body{
 p{
 	margin-left: 10vw;
 	margin-right: 10vw;
+	color: #bfbdc1;
 }
+
   
 /* floating button */
 .float-social{
@@ -140,7 +152,8 @@ img#court{
   
 
  .container{
-	background-image: url(img_assets/dark.png);
+	/*background-image: url(img_assets/dark.png);*/
+	background-color: #221E1E;
 	padding: 2vh;
 	border-radius: 1vw;
  }
