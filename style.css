@@ -39,7 +39,7 @@ body{
 
 /* Image stack, perhaps change img to be more specific */
 
-img{
+.image-stack img{
 	width: 90%;
 	height: auto;
 	border-radius: 1vw;
@@ -137,36 +137,46 @@ img#court{
   
   /* end floating button */
 
-  .hover-underline {
-	display: inline-block;
-	position: relative;
-	color: #fff;
+  
+
+ .container{
+	background-image: url(img_assets/dark.png);
+	padding: 2vh;
+	border-radius: 1vw;
+ }
+
+ 
+
+ .hover-underline {
+    display: inline-block;
+    position: relative;
+    color: #fff;
   }
   
   .hover-underline::after {
-	content: '';
-	position: absolute;
-	width: 100%;
-	transform: scaleX(0);
-	height: 2px;
-	bottom: 0;
-	left: 0;
-	background-color: #fff;
-	transform-origin: bottom right;
-	transition: transform 0.25s ease-out;
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
   }
   
   .hover-underline:hover::after {
-	transform: scaleX(1);
-	transform-origin: bottom left;
+    transform: scaleX(1);
+    transform-origin: bottom left;
   }
 
-  #end-card{
-    text-align: center;
+#end-card{
+	text-align: center;
 	font-weight: bold;
-    font-size: 1vw;
-    color: #fff;
-    position:relative;
+	font-size: 1vw;
+	color: #fff;
+	position:relative;
 }
 
 #end-heart{
