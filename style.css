@@ -86,6 +86,10 @@ p{
 	color: #bfbdc1;
 }
 
+#fun-facts{
+	text-decoration: underline;
+}
+
   
 /* floating button */
 .float-social{
