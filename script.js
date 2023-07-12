@@ -1,3 +1,13 @@
+/** Navigation Bar Responsive */
+function navBar() {
+    var x = document.getElementById("navBar");
+    if (x.className === "nav") {
+      x.className += " responsive";
+    } else {
+      x.className = "nav";
+    }
+  }
+
 /* Typing function*/    
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;

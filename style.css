@@ -15,6 +15,7 @@ body{
 .nav{
 	margin-top: 3vh;
 	float: right;
+	overflow: hidden;
 }
 
 .nav a{
@@ -208,4 +209,53 @@ img#court{
 	font-weight: bold;
     font-size: 1vw;
     position:relative;
+}
+
+ /* Responsive */
+ @media (min-width: 600px){
+    main{
+        flex-wrap: nowrap;
+    }
+    
+    div{
+        flex-basis: 33%;
+    }
+
+	.nav a:not(:first-child) {display: none;}
+	.nav a.icon {
+		float: right;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.nav.responsive {position: relative;}
+	.nav.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.nav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+
+	.nav a:hover{
+		background-color: #111010;
+	}
+
+	.name-card{
+		float:none;
+	}
+	
+	#my-name{
+		font-size: 50px;
+		float:none;
+	}
+
+	#typing-subhead{
+		font-size: 15px;
+	}
+	
 }
