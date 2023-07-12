@@ -267,5 +267,10 @@ img#court{
 	#typing-subhead{
 		font-size: 15px;
 	}
+
+	p{
+		margin-left: 2vw;
+		margin-right: 2vw;
+	}
 	
 }
