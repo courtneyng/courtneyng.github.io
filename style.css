@@ -13,13 +13,41 @@ body{
 
 /* Navigation bar */
 .nav{
+	/* overflow: hidden; */
 	margin-top: 3vh;
 	float: right;
-	overflow: hidden;
 }
 
 .nav a{
 	padding: 0% .5vw;
+}
+
+.nav .icon {
+	display: none;
+  }
+
+.hover-underline {
+display: inline-block;
+position: relative;
+color: #fff;
+}
+
+.hover-underline::after {
+content: '';
+position: absolute;
+width: 100%;
+transform: scaleX(0);
+height: 2px;
+bottom: 0;
+left: 0;
+background-color: #fff;
+transform-origin: bottom right;
+transition: transform 0.25s ease-out;
+}
+
+.hover-underline:hover::after {
+transform: scaleX(1);
+transform-origin: bottom left;
 }
 /* Navigation bar */
 
@@ -171,29 +199,7 @@ img#court{
 
  
 
- .hover-underline {
-    display: inline-block;
-    position: relative;
-    color: #fff;
-  }
-  
-  .hover-underline::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #fff;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
-  
-  .hover-underline:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
+ 
 
 #end-card{
 	text-align: center;
@@ -212,7 +218,7 @@ img#court{
 }
 
  /* Responsive */
- @media (min-width: 600px){
+ @media (max-width: 600px){
     main{
         flex-wrap: nowrap;
     }
@@ -221,7 +227,7 @@ img#court{
         flex-basis: 33%;
     }
 
-	.nav a:not(:first-child) {display: none;}
+	.nav a {display: none;}
 	.nav a.icon {
 		float: right;
 		display: block;
@@ -247,6 +253,10 @@ img#court{
 
 	.name-card{
 		float:none;
+	}
+
+	#hey{
+		margin-top:auto;
 	}
 	
 	#my-name{
