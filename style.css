@@ -1,5 +1,5 @@
 html{
-	font-family: Hack,monospace;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body{
@@ -63,7 +63,7 @@ transform-origin: bottom left;
 }
 
 #my-name{
-	font-size: 100px;
+	font-size: 6vw;
 	float: right;
 	margin-top: 0;
 	margin-bottom: 2vh;
@@ -192,7 +192,7 @@ img#court{
 
  .container{
 	/*background-image: url(img_assets/dark.png);*/
-	background-color: #221E1E;
+	/* background-color: #221E1E; */
 	padding: 2vh;
 	border-radius: 1vw;
  }
